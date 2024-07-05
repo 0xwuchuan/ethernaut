@@ -1,0 +1,9 @@
+# Store runtime bytecode at memory offset 0 -> 32
+push10 0x602a60005260206000f3
+push1 0
+mstore
+
+# Return runtime bytecode at memory offset 22 (first 22 is left padded bytes32)
+push1 0x0a
+push1 0x16
+return

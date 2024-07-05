@@ -1,0 +1,10 @@
+# Store number 42 (0x2A) to memory offset 0 -> 32
+push1 0x2A
+push1 0
+mstore
+
+# Return number 42 stored at memory offset 0 -> 32
+push1 0x20
+push1 0
+return 
+
